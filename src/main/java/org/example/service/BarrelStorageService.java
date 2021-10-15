@@ -10,14 +10,15 @@ public class BarrelStorageService {
     public Barrel getBarrel() {
         return barrels.poll();
     }
+
     public void saveBarrel(Barrel barrel){
         barrels.add(barrel);
     }
 
     @Override
     public String toString() {
-        return "BarrelStorageService{" +
-                "barrels=" + barrels +
+        return "BarrelStorageService. " +
+                "Barrels now is: " + "\n{" + barrels +
                 '}';
     }
 }

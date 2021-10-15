@@ -7,6 +7,6 @@ public class Wine extends Alcohol {
 
     @Override
     public String toString() {
-        return "It's wine. Tasty))";
+        return "Wine " + "Alk " + alcoholByVolume + "°";
     }
 }

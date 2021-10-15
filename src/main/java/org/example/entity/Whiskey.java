@@ -7,6 +7,6 @@ public class Whiskey extends Alcohol {
 
     @Override
     public String toString() {
-        return "It's whiskey. Strong!!";
+        return "Whiskey";
     }
 }

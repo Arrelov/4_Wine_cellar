@@ -12,11 +12,12 @@ public class Application {
     public static void main(String[] args) {
         BarrelStorageService storageService = new BarrelStorageService();
 
-        Barrel barrel = new Barrel(20, new Wine(7D),20);
+        Barrel barrel = new Barrel("Naibour's brewery's one",20, new Wine(7D),20);
 
         for (int i = 0; i<10; i++){
             storageService.saveBarrel(barrel);
         }
+
 
         System.out.println(storageService);
 

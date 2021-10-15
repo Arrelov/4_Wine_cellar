@@ -1,6 +1,7 @@
 package org.example.entity;
 
 public class Barrel {
+    private String title;
     private final double size;
     private Alcohol alcohol;
     private double currentFilling;
@@ -9,7 +10,8 @@ public class Barrel {
         this.size = size;
     }
 
-    public Barrel(double size, Alcohol alcohol, double currentFilling) {
+    public Barrel(String title, double size, Alcohol alcohol, double currentFilling) {
+        this.title = title;
         this.size = size;
         this.alcohol = alcohol;
         this.currentFilling = currentFilling;
@@ -35,12 +37,20 @@ public class Barrel {
         this.currentFilling = currentFilling;
     }
 
+    public String getTitle() {
+        return title;
+    }
+
+    public void setTitle(String title) {
+        this.title = title;
+    }
+
     @Override
     public String toString() {
-        return "Barrel{" +
-                "size=" + size +
-                ", alcohol=" + alcohol +
-                ", currentFilling=" + currentFilling +
+        return "\n" + "Barrel titled \"" + title + "\"" + " {" +
+                "size= " + size +
+                ", alcohol= " + alcohol +
+                ", currentFilling= " + currentFilling +
                 '}';
     }
 }
