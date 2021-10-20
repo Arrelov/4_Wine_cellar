@@ -1,10 +1,10 @@
 package org.example.entity;
 
 public class Barrel {
-    private String title;
-    private final double size;
-    private Alcohol alcohol;
-    private double currentFilling;
+    private String title;           // этикетка
+    private final double size;      // объем бочки
+    private Alcohol alcohol;        // тип напитка в бочке
+    private double currentFilling;  // текущий остаток напитка в бочке
 
     public Barrel(double size) {
         this.size = size;
